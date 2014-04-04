@@ -1,0 +1,1854 @@
+body {
+	font-family: 'Helvetica-Neue', Helvetica, Arial, Verdana, sans-serif;
+	font-size: small;
+	color: #252525;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	}
+	* html body {
+		font-size: x-small;
+		f\ont-size: small;
+		}
+	body#HousingWorkOrderForm {
+		background: #e59736 url(http://www.humboldt.edu/housing/images/bgs/housingHome.jpg) no-repeat top center;
+		}
+	body#DiningHome {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningHome.jpg) no-repeat top center;
+		}
+	body#Interior {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/housingInterior.jpg) no-repeat top center;
+		}
+		body#Interior.apply {
+			background: #fff url(http://www.humboldt.edu/housing/images/bgs/housingInteriorShort.jpg) no-repeat top center;
+			}
+	body#diningInterior {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInterior.jpg) no-repeat top center;
+		}
+		body#diningInterior.dininghall {
+			background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+			}
+		body#diningInterior.employment {
+			background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+			}
+		body#diningInterior.diningContact {
+			background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+			}
+	body#Faq {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/housingInteriorShort.jpg) no-repeat top center;
+		}
+	body#Carepacks {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+		}
+	body#Ccard {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+		}
+	body#Mealplans {
+		background: #fff url(http://www.humboldt.edu/housing/images/bgs/diningInteriorShort.jpg) no-repeat top center;
+		}
+	body#formtable {
+		background: #EBF4FA no-repeat top center;
+		}
+	
+h1, h2, h3, h4, h5, h6, p, ul, ol, table, form { margin: 0; padding: 0; }
+
+map, area { border: none !important; } 
+	
+a img {	border: none; }
+	
+img.tourguide {
+	margin: 0px 0px 20px 0px;
+	}
+	
+hr {
+	border: none;
+	border-top: 1px solid #faeae1;
+	line-height: 0;
+	margin: 20px 0px
+	}
+	
+map {
+	border: none;
+	}
+area {
+	border: none;
+	}
+	
+#Wrapper {
+	width: 755px;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 100;
+	text-align: left;
+	}
+	* html #Wrapper {
+		width: 762px;
+		}
+	#Wrapper.homepage {
+		margin-top: -116px;
+		}
+		#Wrapper.homepage h1.housingmark {
+			padding: 30px 0px;
+			}
+	
+	#Wrapper.interior {
+		width: 762px;
+		}
+		#Wrapper.interior div.hsumark {
+			margin: 5px 0px 0px 11px;
+			}
+
+#Wrapper.homepage div#slideShow {
+	margin-top: -3px;
+	border: 2px solid #fff;
+	border-top: none;
+	border-bottom: none;
+	width: 753px;
+	}
+	
+#Wordmark {
+	padding: 0px 0px 8px 12px;
+	}
+	* html #Wordmark {
+		margin-top: -7px;
+		visibility: visible;
+		position: relative;
+		z-index: 100;
+		}
+#PrintWordmark {
+	display: none;
+	}
+	
+#Masthead {
+	margin: 0;
+	padding: 0;
+	}
+	#Masthead.homepage {
+		height: 117px;
+		background: transparent url(http://www.humboldt.edu/housing/images/mastHome.gif) repeat-x top left;
+		border-bottom: 2px solid #fff;
+		}
+	#DiningMast {
+		height: 117px;
+		background: transparent url(http://www.humboldt.edu/housing/images/mastDining.gif) repeat-x top left;
+		border-bottom: 2px solid #fff;
+		}
+	#Masthead.interior {
+		height: 321px;
+		border: none;
+		}
+		#Masthead.interior h1.housingmark {
+			margin-top: 3px;
+			width: 357px;
+			border: 2px solid #fff;
+			border-top: none;
+			float: left;
+			}
+		#Masthead.interior h2.sectiontitle {
+			margin: 0; padding: 0;
+			float: left;
+			width: 357px;
+			clear: left;
+			border: 2px solid #fff;
+			border-top: none;
+			}
+		#Masthead.interior p.photo {
+			margin: 0; padding: 0;
+			float: right;
+			border-right: 2px solid #fff;
+			margin-top: 3px;
+			}
+		
+
+
+ul#HomeNav {
+	margin: 0;
+	padding: 0;
+	width: 780px;
+	z-index: 100;
+	clear: both;
+	}
+	ul#HomeNav li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline;
+		}
+		ul#HomeNav li a {
+			margin: 0;
+			padding: 10px 15px;
+			list-style: none;
+			display: block;
+			border: 2px solid #fff;
+			border-left: none;
+			float: left;
+			text-align: center;
+			font-size: 1.3em;
+			line-height: 1em;
+			color: #fff;
+			width: 119px;
+			height: 35px;
+			}
+			* html ul#HomeNav li a {
+				width: 151px;
+				w\idth: 119px;
+				}
+			ul#HomeNav li a.future {
+				border-left: 2px solid #fff;
+				background-color: #d3b03b;
+				}
+				ul#HomeNav li a.future:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+			ul#HomeNav li a.current {
+				background-color: #a35d32;
+				padding-right: 16px;
+				}
+				ul#HomeNav li a.current:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+			ul#HomeNav li a.dining {
+				background-color: #ee9861;
+				line-height: 2em;
+				}
+				* html ul#HomeNav li a.dining {
+					line-height: 1.95em;
+					l\ine-height: 2em;
+					}
+				ul#HomeNav li a.dining:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}				
+			ul#HomeNav li a.offcampus {
+				background-color: #ca822e;
+				}
+				ul#HomeNav li a.offcampus:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+			ul#HomeNav li a.conferences {
+				background-color: #e59736;
+				padding-left: 14px;
+				}
+				* html ul#HomeNav li a.conferences {
+					width: 153px;
+					w\idth: 119px;
+					padd\ing-left: 10px;
+					}
+				ul#HomeNav li a.conferences:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+					
+			body#DiningHome ul#HomeNav li a.future {
+				border-left: 2px solid #fff;
+				background-color: #b2b715;
+				color: #e8eab9;
+				}
+				body#DiningHome ul#HomeNav li a.future:hover {
+					background-color: #fff;
+					color: #018680;
+					}
+			body#DiningHome ul#HomeNav li a.current {
+				background-color: #b2b715;
+				padding-right: 16px;
+				color: #e8eab9;
+				}
+				body#DiningHome ul#HomeNav li a.current:hover {
+					background-color: #fff;
+					color: #018680;
+					}
+			body#DiningHome ul#HomeNav li a.dining {
+				background-color: #00716c;
+				border-bottom: 2px solid #00716c;
+				border-right: none;
+				}	
+				* html body#DiningHome ul#HomeNav li a.dining {
+					border-bottom: 3px solid #00716c;
+					}
+				body#DiningHome ul#HomeNav li a.dining:hover {
+					color: #fff;
+					}	
+			body#DiningHome ul#HomeNav li a.offcampus {
+				background-color: #b2b715;
+				color: #e8eab9;
+				border-left: 2px solid #fff;
+				}
+				body#DiningHome ul#HomeNav li a.offcampus:hover {
+					background-color: #fff;
+					color: #018680;
+					}
+			body#DiningHome ul#HomeNav li a.conferences {
+				background-color: #b2b715;
+				padding-left: 14px;
+				color: #e8eab9;
+				}
+				body#DiningHome ul#HomeNav li a.conferences:hover {
+					background-color: #fff;
+					color: #018680;
+					}
+					
+					
+
+#subNav {
+	background-color: #d66d42;
+	border: 2px solid #fff;
+	border-top: none;
+	width: 753px;
+	}
+	#subNav.dining {
+		background-color: #00716c;
+		}
+	#subNav ul {
+		margin: 0;
+		padding: 0;
+		width: 780px;
+		z-index: 100;
+		clear: both;
+		height: 40px;
+		}
+		* html #subNav.dining ul {
+			width: 753px;
+			}
+		#subNav ul li {
+			margin: 0;
+			list-style: none;
+			display: inline;
+			}
+			#subNav ul li a {
+				color: #fff;
+				padding: 10px 15px;
+				line-height: 2.8em;
+				font-size: 1.15em;				
+				}
+
+ul.intnav {
+	margin: 0;
+	padding: 0;
+	width: 361px;
+	z-index: 100;
+	float: left;
+	}
+	ul.intnav li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline;
+		}
+		ul.intnav li a {
+			position: relative;
+			margin: 0;
+			padding: 3px 10px;
+			list-style: none;
+			display: block;
+			border: 2px solid #fff;
+			border-left: none;
+			border-top: none;
+			float: left;
+			text-align: center;
+			font-size: .9em;
+			line-height: .9em;
+			color: #fff;
+			width: 51px;
+			height: 22px;
+			z-index: 100;
+			}
+			* html ul.intnav li a {
+				width: 40px;
+				height: 23px;
+				padding: 2px 10px;
+				}
+				* html ul.intnav li a:link, * html ul.intnav li a:visited {
+					color: #fff;
+					}
+				
+			ul.intnav li a.future {
+				border-left: 2px solid #fff;
+				background-color: #d3b03b;
+				}
+				body.future li a.future:link, body.future li a.future:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #a35d32;
+					}
+				ul.intnav li a.future:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+					body.future li a.future:hover {
+						background-color: #fff;
+						color: #a35d32;
+						}
+			ul.intnav li a.current {
+				background-color: #a35d32;
+				border-bottom: 2px solid #fff;
+				}
+				body.current li a.current:link, body.current li a.current:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #a35d32;
+					}
+				ul.intnav li a.current:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+					body.current li a.current:hover {
+						background-color: #fff;
+						color: #a35d32;
+						}
+			ul.intnav li a.dining {
+				background-color: #ee9861;
+				line-height: 2em;
+				width: 40px;
+				}
+				* html ul.intnav li a.dining {
+					line-height: 1.9em;
+					width: 36px;
+					}
+				ul.intnav li a.dining:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}				
+			ul.intnav li a.offcampus {
+				background-color: #ca822e;
+				line-height: 2em;
+				width: 75px;
+				padding: 3px 0px;
+				}
+				* html ul.intnav li a.offcampus {
+					width: 73px;
+					padding: 2px 0px;
+					}
+				body.offcampus li a.offcampus:link, body.offcampus li a.offcampus:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #a35d32;
+					}
+				ul.intnav li a.offcampus:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+					body.offcampus li a.offcampus:hover {
+						background-color: #fff;
+						color: #a35d32;
+						}
+			ul.intnav li a.conferences {
+				background-color: #e59736;
+				line-height: 2em;
+				width: 55px;
+				padding-left: 7px;
+				}
+				* html ul.intnav li a.conferences {
+					padding-left: 4px;
+					padding-right: 4px;
+					font-size: .9em;
+					}
+				body.conferences li a.conferences:link, body.conferences li a.conferences:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #a35d32;
+					}
+				ul.intnav li a.conferences:hover {
+					background-color: #fff;
+					color: #a35d32;
+					}
+					body.conferences li a.conferences:hover {
+						background-color: #fff;
+						color: #a35d32;
+						}
+					
+			
+			ul.intnav li a.dininghall {
+				background-color: #00557c;
+				border-left: 2px solid #fff;
+				}
+				body.dininghall li a.dininghall:link, body.dininghall li a.dininghall:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #fff;
+					}
+				ul.intnav li a.dininghall:hover {
+					background-color: #fff;
+					color: #00557c;
+					}
+					body.dininghall li a.dininghall:hover {
+						background-color: #fff;
+						color: #00557c;
+						text-decoration: none;
+						}
+			ul.intnav li a.locations {
+				background-color: #00557c;
+				border-bottom: 2px solid #fff;
+				}
+				* html ul.intnav li a.locations {
+					padding-left: 9px;
+					padding-right: 8px;
+					font-size: .9em;
+					}
+				body.diningLocations li a.locations:link, body.diningLocations li a.locations:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #00557c;
+					}
+				ul.intnav li a.locations:hover {
+					background-color: #fff;
+					color: #00557c;
+					}
+					body.diningLocations li a.locations:hover {
+						background-color: #fff;
+						color: #00557c;
+						text-decoration: none;
+						}
+			ul.intnav li a.ccard {
+				background-color: #00557c;
+				line-height: 2em;
+				width: 40px;
+				}
+				* html ul.intnav li a.ccard {
+					line-height: 1.9em;
+					width: 36px;
+					}
+				body.ccard li a.ccard:link, body.ccard li a.ccard:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #00557c;
+					}
+				ul.intnav li a.ccard:hover {
+					background-color: #fff;
+					color: #00557c;
+					}		
+					body.ccard li a.ccard:hover {
+						background-color: #fff;
+						color: #00557c;
+						text-decoration: none;
+						}		
+			ul.intnav li a.mealplans {
+				background-color: #00557c;
+				line-height: 2em;
+				width: 75px;
+				padding: 3px 0px;
+				}
+				* html ul.intnav li a.mealplans {
+					width: 73px;
+					padding: 2px 0px;
+					}
+				body.mealplans li a.mealplans:link, body.mealplans li a.mealplans:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #00557c;
+					}
+				ul.intnav li a.mealplans:hover {
+					background-color: #fff;
+					color: #00557c;
+					}
+					body.mealplans li a.mealplans:hover {
+						background-color: #fff;
+						color: #00557c;
+						}
+			ul.intnav li a.carepacks {
+				background-color: #00557c;
+				line-height: 2em;
+				width: 55px;
+				padding-left: 7px;
+				}
+				* html ul.intnav li a.carepacks {
+					padding-left: 4px;
+					padding-right: 4px;
+					font-size: .9em;
+					}
+				body.carepacks li a.carepacks:link, body.carepacks li a.carepacks:visited {
+					background-color: #fff;
+					border-bottom: 2px solid #fff;
+					color: #00557c;
+					}
+				ul.intnav li a.carepacks:hover {
+					background-color: #fff;
+					color: #00557c;
+					}
+					body.carepacks li a.carepacks:hover {
+						background-color: #fff;
+						color: #00557c;
+						}
+
+
+div.intsubnav {
+	position: relative;
+	margin: -1px 0 0 0; padding: 0px 0px 0px 0px;
+	float: left;
+	width: 357px;
+	height: 80px;
+	border: 2px solid #fff;
+	border-top: none;
+	border-bottom: none;
+	font-size: 1em;
+	line-height: 1.3em;
+	background-color: #fff;
+	z-index: 50;
+	}
+	* html div.intsubnav {
+		height: 63px;
+		font-size: .9em;
+		}
+	body.offcampus div.intsubnav {
+		font-size: 1em;
+		}
+		
+	div.intsubnav ul.left {
+		float: left;
+		width: 150px;
+		padding-left: 10px;
+		}
+		body.offcampus div.intsubnav ul.left {
+			width: 200px;
+			}
+	div.intsubnav ul.right {
+		float: left;
+		width: 170px;
+		}
+	div.intsubnav ul {
+		padding: 0; margin: 0;
+		list-style: none;	
+		}
+		div.intsubnav ul a:link, div.intsubnav ul a:visited {
+			color: #dd6f36;
+			}
+			body#diningInterior div.intsubnav ul a:link, body#diningInterior div.intsubnav ul a:visited {
+				color: #00716c;
+				}
+			div.intsubnav ul a:hover {
+				color: #a35d32;
+				}
+				body#diningInterior div.intsubnav ul a:hover {
+					color: #00557c;
+					}
+
+
+h2 {
+	color: #dd6f36;
+	font-size: 140%;
+	padding: 0 0 5px 0;
+	margin: 0;
+	}
+
+h3 {
+	color: #a45c33;
+	font-size: 110%;
+	padding: 0 0 5px 0;
+	margin: 0;
+	}
+
+h4 {
+	color: #a45c33;
+	font-size: 100%;
+	padding: 0 0 5px 0;
+	margin: 0;
+	}
+
+p {
+	margin: 0;
+	padding: 0 0 15px 0;
+	line-height: 1.3em;
+	}	
+	p.opening {
+		font-size: 105%;
+		padding: 0 0 15px 0;
+		margin: 0;
+		line-height: 1.4em;
+		}
+	p.highlight {
+		background-color: #faeae1;
+		}
+	p.close {
+		text-align: right;
+		padding: 2px 10px 2px 0px;
+		margin: 10px 0px;
+		background-color: #dd6f36;
+		}
+		p.close a:link, p.close a:visited {
+			color: #fff;
+			display: block;
+			width: 100%;
+			}
+	p.address {
+		margin-left: 15px;
+		}
+
+#news {
+	background: #f5b836 url(http://www.humboldt.edu/housing/images/housingPlus.gif) no-repeat 0% 95%;
+	border: 2px solid #fff;
+	border-top: none;
+	width: 753px;
+	}
+	* html #news {
+		width: 757px;
+		w\idth: 753px;
+		}
+	#news.dining {
+		background: #6dbd9d url(http://www.humboldt.edu/housing/images/diningPlus.gif) no-repeat 0% 95%;
+		border-top: 2px solid #fff;
+		}
+	#news h2 {
+		color: #dd6f36;
+		font-weight: normal;
+		line-height: 2.4em;		
+		padding-left: 25px;
+		}
+	#news.dining h2 {
+		color: #fff;
+		}
+	#news p {
+		color: #fff;
+		font-size: 1.1em;
+		padding-left: 10px;
+		}
+		#news p a:link, #news p a:visited {
+			color: #fff;
+			}
+			#news p a:hover {
+				color: #dd6f36;
+				}
+				#news.dining p a:hover {
+					color: #f1ef9c;
+					}
+					
+#Bagelad {
+	background-color: #fff;
+	width: 746px;
+	margin-left: 6px;
+	}
+	#Bagelad p {
+		margin: 0;
+		padding: 0;
+		}
+
+#newswithad {
+	background-color: #f5b836;
+	border: 2px solid #fff;
+	border-bottom: none;
+	border-top: none;
+	width: 753px;
+	}
+	#newswithad h2 {
+		color: #dd6f36;
+		font-weight: normal;
+		line-height: 2.4em;		
+		padding-left: 25px;
+		}
+	#newswithad p {
+		color: #fff;
+		font-size: 1.1em;
+		padding-left: 10px;
+		}
+		#newswithad p a:link, #newswithad p a:visited {
+			color: #fff;
+			}
+			#newswithad p a:hover {
+				color: #dd6f36;
+				}
+#adblock {
+	width: 757px;
+	background: #653427 url(http://www.humboldt.edu/housing/images/bgs/housingHomeAdBlock.gif) no-repeat top left;
+	height: 83px;
+	margin-top: -2px;
+	padding-top: 20px;
+	border-bottom: 2px solid #fff;
+	}
+	#adblock p.adtitle {
+		float: left;
+		padding: 0px 0px 0px 8px;
+		}
+	#adblock .adcontent {
+		float: left;
+		clear: none;
+		width: 400px;
+		margin-left: 40px;
+		}
+		#adblock .adcontent h2 {
+			font-weight: normal;
+			color: #fff;
+			padding: 0px;
+			}
+		#adblock .adcontent p {
+			color: #b29a93;
+			font-size: .9em;
+			padding: 4px 0px;
+			}
+			#adblock .adcontent p.fineprint {
+				color: #b29a93;
+				font-size: .7em;
+				}
+		#adblock .adcontent h2 a:link, #adblock .adcontent h2 a:visited {
+			color: #fff !important;
+			}
+		#adblock .adcontent p a:link, #adblock .adcontent p a:visited {
+			color: #b29a93 !important;
+			}
+	
+#Content {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	}
+	body#Faq #Content {
+		margin-top: -80px;
+		}
+	* html #Content {
+		margin-top: 50px;
+		}
+		* html body#Faq #Content {
+			ma\rgin-top: 50px;
+			}
+	body#Carepacks #Content {
+		margin-top: -80px;
+		}
+		* html body#Carepacks #Content {
+			ma\rgin-top: 30px;
+			}
+	body#Ccard #Content {
+		margin-top: -80px;
+		}
+		* html body#Ccard #Content {
+			ma\rgin-top: 30px;
+			}
+	body#Mealplans #Content {
+		margin-top: -80px;
+		}
+		* html body#Mealplans #Content {
+			ma\rgin-top: 30px;
+			}
+	body#diningInterior.dininghall #Content {
+		margin-top: -80px;
+		}
+		* html body#diningInterior.dininghall #Content {
+			ma\rgin-top: 30px;
+			}
+	body#diningInterior.employment #Content {
+		margin-top: -80px;
+		}
+		* html body#diningInterior.employment #Content {
+			ma\rgin-top: 30px;
+			}
+	body#diningInterior.diningContact #Content {
+		margin-top: -80px;
+		}
+		* html body#diningInterior.diningContact #Content {
+			ma\rgin-top: 30px;
+			}
+	body#Interior.apply #Content {
+		margin-top: -80px;
+		}
+		* html body#Interior.apply #Content {
+			ma\rgin-top: 30px;
+			}
+	#Content h2.pagetitle {
+		color: #653427;
+		font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+		font-size: 2em;
+		font-weight: normal;
+		text-transform: lowercase;
+		}
+		body#diningInterior #Content h2.pagetitle {
+			color: #005278;
+			}
+		body#Carepacks #Content h2.pagetitle {
+			color: #005278;
+			}
+		body#Ccard #Content h2.pagetitle {
+			color: #005278;
+			}
+		body#Mealplans #Content h2.pagetitle {
+			color: #005278;
+			}
+
+
+#MainContent {
+	float: left;
+	width: 502px;
+	padding: 10px 0; margin: 0;
+	color: #252525;
+	overflow: visible;
+	}
+	#MainContent.noside {
+		width: 700px;
+		}
+	#MainContent h3 {
+		color: #dd6f36;
+		font-weight: bold;
+		font-size: 1.3em;
+		margin: 15px 0px 10px 0px;
+		}
+	#MainContent h3#FaqInstructions {
+		text-align: right;
+		padding-right: 15px;
+		}
+		#MainContent h3#FaqInstructions img {
+			float: right;
+			}
+		body#diningInterior #MainContent h3 {
+			color: #00557c;
+			}
+			body#Carepacks #MainContent h3 {
+				color: #00557c;
+				}
+			body#Ccard #MainContent h3 {
+				color: #00557c;
+				}
+			body#Mealplans #MainContent h3 {
+				color: #00557c;
+				}
+	#MainContent h4 {
+		color: #a45c33;
+		font-weight: bold;
+		font-size: 1em;
+		margin: 25px 0px 10px 0px;
+		}
+		body#diningInterior #MainContent h4 {
+			color: #b2b715;
+			}
+			body#Carepacks #MainContent h4 {
+				color: #b2b715;
+				}
+			body#Ccard #MainContent h4 {
+				color: #b2b715;
+				}
+			body#Mealplans #MainContent h4 {
+				color: #b2b715;
+				}
+	#MainContent p.pageintro {
+		padding: 5px 0px; margin: 0;
+		font-size: 1em;
+		line-height: 1.6em;
+		}
+	#MainContent p.totop {
+		text-align: right;
+		font-size: .9em;
+		padding: 10px 0 5px 0;
+		clear: both;
+		border-bottom: 1px solid #faeae1;
+		}
+		body#diningInterior #MainContent p.totop {
+			border-bottom: 1px solid #f4f4dc;
+			}
+	#MainContent p img {
+		float: left;
+		padding: 0px 5px 5px 0px;
+		}
+	#MainContent ol {
+		margin: 10px 25px;
+		padding: 0px;
+		}
+		#MainContent ol li {
+			font-size: 1em;
+			line-height: 1.2em;
+			margin: 0;
+			padding: 3px 0px;
+			}
+	#MainContent ul {
+		margin: 10px 0px;
+		padding: 0px;
+		list-style: none;
+		}
+		#MainContent ul.bulleted {
+			margin-top: 0px;
+			list-style: square;
+			padding-left: 15px;
+			}
+		#MainContent ul.checklist {
+			margin-top: 0px;
+			list-style: square;
+			padding-left: 15px;
+			}
+		#MainContent ul li strong {
+			color: #653427;
+			}
+			body#diningInterior #MainContent ul li strong {
+				color: #252525 !important;
+				}
+		#MainContent ul li ul {
+			padding: 0px 0px 0px 30px;
+			list-style: square;
+			}
+		#MainContent ul li {
+			font-size: 1em;
+			line-height: 1.2em;
+			margin: 0;
+			padding: 3px 0px;
+			}
+			#MainContent ul.left {
+				float: left;
+				width: 200px;
+				}
+			#MainContent ul.right {
+				float: right;
+				width: 250px;
+				}
+	#MainContent dl {
+		margin: 0; padding: 0;
+		}
+		#MainContent dl.dates {
+			margin-left: 15px;
+			}
+		#MainContent dt {
+			margin: 10px 0 5px 0; padding: 0;
+			color: #a35d32;
+			font-weight: bold;
+			line-height: 1.3em;
+			}
+			body#diningInterior #MainContent dt {
+				color: #00557c;
+				}
+			#MainContent dt.newmonth {
+				color: #dd6f36;
+				font-weight: bold;
+				font-size: 1.2em;
+				border-top: 1px solid #faeae1;
+				padding-top: 10px;
+				margin: 40px 0 0 -15px;
+				}
+			#MainContent dl.checklist dt {
+				background-image: url(http://www.humboldt.edu/housing/images/decor/checkbox.gif);
+				background-repeat: no-repeat;
+				background-position: left;
+				padding-left: 15px;
+				}
+				#MainContent dl.checklist dl dt {
+					background: none;
+					padding-left: 0px;
+					}
+		#MainContent dd {
+			margin: 0; padding: 0;
+			line-height: 1.3em;
+			}
+			#MainContent dd.totop {
+				text-align: right;
+				font-size: .9em;
+				padding: 10px 0 5px 0;
+				clear: both;
+				}
+		#MainContent dl dl {
+			margin-left: 25px;
+			}
+
+.jumpnav {
+	padding: 5px 10px;
+	margin-bottom: 30px;
+	border: 1px solid #dd6f36;
+	background-color: #fdeac2;
+	}
+	body.faq div.jumpnav h3 span {
+		font-size: .8em;
+		color: #f00;
+		float: right;
+		}
+	* html .jumpnav {
+		clear: both;
+		height: 0;
+		}
+	.jumpnav a:hover {
+		color: #a45c33;
+		}
+	.jumpnav ul li ul {
+		padding-left: 30px !important;
+		}
+		
+.faqAnswer {
+	display: block;
+	background-color: #fff;
+	border: 1px solid #dd6f36;
+	}
+	.faqAnswer p {
+		padding: 5px 5px;
+		}
+	.faqAnswer dl {
+		padding: 5px 5px !important;
+		}
+	body.conferences .faqAnswer {
+		margin-bottom: 20px;
+		}
+	
+div.disclaimer {
+	clear: both;
+	width: 100%;
+	padding: 15px 0px 0px 0px; margin: 30px 0 0 0;
+	font-size: .95em;
+	line-height: 1.4em;
+	border-top: 1px solid #faeae1;
+	}
+		
+		
+#SideContent {
+	float: right;
+	width: 190px;
+	padding: 20px 0 0 0; margin: 0px;
+	color: #252525;
+	text-align: right;
+	background: #fff url(http://www.humboldt.edu/housing/images/sideDecor.gif) no-repeat top left;
+	}
+	body#diningInterior #SideContent {
+		background: #fff url(http://www.humboldt.edu/housing/images/sideDecorDining.gif) no-repeat top left;
+		}
+	body#Carepacks #SideContent {
+		background: #fff url(http://www.humboldt.edu/housing/images/sideDecorDining.gif) no-repeat top left;
+		}
+	body#Mealplans #SideContent {
+		background: none;
+		}
+	body.dininghall #SideContent {
+		background: none !important;
+		}
+	body.diningLocations #SideContent {
+		background: none !important;
+		}
+	body.wideside #SideContent {
+		width: 250px;
+		}
+	#SideContent.offcampus {
+		background: #fff url(http://www.humboldt.edu/housing/images/sideDecorOCH.gif) no-repeat top left;
+		}
+	#SideContent img {
+		margin-top: -20px;
+		}
+	#SideContent h3 {
+		color: #dd6f36;
+		font-weight: bold;
+		font-size: 1.2em;
+		}
+		body#diningInterior #SideContent h3 {
+			color: #00716c;
+			}
+		body#Carepacks #SideContent h3 {
+			color: #00716c;
+			}
+		body#Mealplans #SideContent h3 {
+			color: #00716c;
+			}
+	#SideContent p.pageintro {
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		line-height: 1.6em;
+		}
+		#SideContent p.pageintro:first-line {
+			color: #dd6f36;
+			font-size: 1.3em;
+			}
+	#SideContent h3.windows img, #SideContent h3.market img {
+		padding-bottom: 20px;
+		}
+	#SideContent ul {
+		margin: 10px 0px 20px 10px;
+		padding: 0px;
+		list-style: none;
+		}
+		#SideContent ul li {
+			font-size: 1em;
+			line-height: 1.2em;
+			margin: 0;
+			padding: 5px 0px;
+			}
+			#SideContent ul li ul {
+				margin: 0; padding: 0;
+				}
+		#SideContent table {
+			width: 100%;
+			text-align: left;
+			border-bottom: 1px solid #005278;
+			}
+			#SideContent table tr th {
+				background-color: #005278;
+				}
+			#SideContent table tr.highlight {
+				background-color: #e6f7f9;
+				}
+#SideContent a:link, #SideContent a:visited {
+	color: #a35d32;
+	}
+	#SideContent a:hover {
+		color: #dd6f36;
+		}
+	body#diningInterior #SideContent a:link, body#diningInterior #SideContent a:visited {
+		color: #6dbd9d;
+		}
+		body#diningInterior #SideContent a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	body#Carepacks #SideContent a:link, body#Carepacks #SideContent a:visited {
+		color: #6dbd9d;
+		}
+		body#Carepacks #SideContent a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	body#Mealplans #SideContent a:link, body#Mealplans #SideContent a:visited {
+		color: #6dbd9d;
+		}
+		body#Mealplans #SideContent a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	
+table {
+	width: 750px;
+	margin: 5px 0px 15px 0px;
+	border-bottom: 1px solid #dd6f36;
+	}
+	table.wside {
+		width: 500px;
+		}
+	table.feeschedule {
+		width: 700px;
+		background-color: #fff;
+		border-left: 1px solid #dd6f36;
+		}
+		table.feeschedule td {
+			border-right: 1px solid #dd6f36;
+			}
+	thead tr {
+		background-color: #dd6f36;
+		color: #fff;
+		}
+		thead tr.subhead {
+			background-color: #f2e0a4;
+			color: #000;
+			}
+		thead th {
+			text-align: left;
+			padding: 5px 3px 3px 5px;
+			}
+	tbody tr.highlight { 
+		background-color: #f9e9c7;
+		}
+		tbody tr.highlight td.nobg {
+			background-color: #fff;
+			}
+		tbody tr.highlightalt td { 
+			font-weight: bold;
+			padding: 6px 0 4px 5px;
+			background-color: #fff;
+			border-top: 1px solid #dd6f36;
+			border-bottom: 1px solid #dd6f36;
+			}
+	tbody tr.diningInfo td {
+		border-bottom: 1px solid #dd6f36;
+		}
+		tbody td {
+			padding: 5px;
+			line-height: 1.3em;
+			}
+			body.offcampus table td img {
+				vertical-align: bottom;
+				}
+	tfoot {
+		background-color: #faeae1;
+		font-size: .9em;
+		}
+		tfoot td {
+			padding: 10px 0px 0px 5px;
+			border-top: 1px solid #dd6f36;
+			}
+	
+
+form p {
+	padding: 20px 0 0 0;
+	}
+	form p label {
+		float: left;
+		font-weight: normal;
+		width: 200px;
+		text-align: right;
+		clear: left;
+		padding: 5px;
+		}
+	form p input, form p select {
+		margin: 3px 3px 0px 10px;
+		}
+	form span.subinfo {
+		float: left;
+		display: block;
+		margin: 5px 0 0 10px;
+		font-size: .9em;
+		}
+	
+fieldset {
+	padding: 10px;
+	margin-bottom: 15px;
+	border: none;
+	}
+	fieldset legend {
+		color: #a45c33;
+		font-size: 125%;
+		padding: 0 0 5px 0;
+		margin: 0;
+		}
+textarea { 
+	width: 400px;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; 
+	font-size: 100%;
+	}
+	
+form input {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+a:link, a:visited {
+	text-decoration: none;
+	color: #dd6f36;
+	}
+	a:hover {
+		color: #f5b836;
+		}
+	body#diningInterior a:link, body#diningInterior a:visited {
+		color: #6dbd9d;
+		}
+		body#diningInterior a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	body#Carepacks a:link, body#Carepacks a:visited {
+		color: #6dbd9d;
+		}
+		body#Carepacks a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	body#Ccard a:link, body#Ccard a:visited {
+		color: #6dbd9d;
+		}
+		body#Ccard a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+	body#Mealplans a:link, body#Mealplans a:visited {
+		color: #6dbd9d;
+		}
+		body#Mealplans a:hover {
+			color: #6dbd9d;
+			text-decoration: underline;
+			}
+
+#Footer {
+	margin-top: 20px;
+	width: 750px;
+	text-align: right;
+	color: #653427;
+	font-size: .9em;
+	}
+	#Footer.dining {
+		color: #005278;
+		}
+		#Footer.dining p a:link, #Footer.dining p a:visited {
+			color: #005278;
+			font-weight: bold;
+			}
+			#Footer.dining p a:hover {
+				color: #fff;
+				}
+	#Footer p a:link, #Footer p a:visited {
+		color: #653427;
+		font-weight: bold;
+		}
+		#Footer p a:hover {
+			color: #fff;
+			}
+	#Footer.interior {
+		margin-top: 80px;
+		text-align: right;
+		color: #bbcf43;
+		font-size: .9em;
+		}
+		#Footer.interior p a:link, #Footer.interior p a:visited {
+			color: #bbcf43;
+			font-weight: bold;
+			}
+			#Footer.interior p a:hover {
+				color: #dd6f36;
+				}
+	body#diningInterior #Footer.interior {
+		color: #b2b715;
+		}
+		body#diningInterior #Footer.interior p a:link, body#diningInterior #Footer.interior p a:visited {
+			color: #b2b715;
+			font-weight: bold;
+			}
+			body#diningInterior #Footer.interior p a:hover {
+				color: #b2b715;
+				text-decoration: underline;
+				}
+
+
+.hidden {
+	position: absolute;
+	top: -10000px;
+	}
+.noblock {
+	display: inline;
+	}
+.resourcebox {
+	padding: 5px 15px 10px 15px; margin: 0 10px 5px 15px;
+	float: right;
+	width: 200px;
+	border: 1px solid #dd6f36;
+	background-color: #faf4f1;
+	}
+	.resourcebox h4 {
+		margin: 0;	padding: 0;
+		}
+	.resourcebox p {
+		margin: 0; padding: 10px 0 0 0;
+		color: #a45c33;
+		}
+
+.hsnoevents {
+	padding: 0px; margin: 0;
+	}
+	.hsnoevents p.subinfo {
+		font-size: .9em;
+		}
+	
+		
+.rss-box-hsnoevents {
+	padding: 0 0 15px 0; margin: 0;
+	}
+	
+	
+.offcampusmenu { 
+	margin-top: 15px;
+	margin-right: 15px;
+	padding-right: 10px;
+	width: 400px;
+	list-style: none;
+	}
+	.offcampusmenu li { 
+		clear: both;
+		padding: 20px 0;
+		}
+		.offcampusmenu li img {
+			float: left;
+			padding: 0 10px 30px 0;
+			}
+			* html .offcampusmenu li img {
+				padding-top: 15px;
+				padding-bottom: 0px;
+				}
+		.offcampusmenu li span { 
+			display: block;
+			font-weight: bold;
+			}
+			
+.timeline img {
+	padding: 20px 0px 60px 0px;
+	}
+	
+p.notice, div.notice {
+	border: 1px solid #dd6f36;
+	background-color: #fee8b9;
+	padding: 10px 10px;
+	margin: 10px 0px;
+	}
+	.notice img {
+		float: left;
+		padding-right: 5px;
+		}
+	div.notice h2 {
+		font-size: 110%;
+		}
+		div.notice h3 {
+			color: #dd6f36;
+			}
+			
+#quicktime {
+	padding: 10px;
+	padding-right: 0px;
+	background-color: #fee8b9;
+	border: 1px solid #dd6f36;
+	margin-bottom: 20px;
+	float: none;
+	}
+	#quicktime img {
+		float: left;
+		margin: 0; padding: 0;
+		z-index: 200;
+		}
+	#quicktime h3 {
+		z-index: 200;
+		}
+	#quicktime object {
+		position: relative;
+		margin: 0 0 10px 0; padding: 5px;
+		border: 1px solid #dd6f36;
+		background-color: #fff;
+		width: 310px;
+		height: 250px;
+		float: left;
+		clear: none;
+		}
+		#quicktime embed {
+			margin: 0; padding: 0;
+			width: 310px;
+			height: 250px;
+			clear: none;
+			float: left;
+			}
+	#quicktime dl.tourtypes {
+		position: relative;	
+		float: right;
+		width: 150px;
+		clear: none;
+		}
+		#quicktime dl.tourtypes dd {	
+			padding: 5px 0px;
+			}
+			#quicktime dl.tourtypes a.current {
+				font-weight: bold;
+				}
+				
+				
+#Valentinepack {
+	margin: 20px 0px;
+	padding: 10px;
+	border: 1px solid #f9cce0;
+	background-color: #fdf0f6;
+	}
+	#Valentinepack h3 {
+		color: #f06eaa !important;
+		}
+		
+#sustainability {
+	padding: 25px 0px 25px 25px;
+	background: #ffffff url(http://www.humboldt.edu/housing/images/diningSustainable.gif) no-repeat top left;
+	}
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	background: #fff;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(http://www.humboldt.edu/housing/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(http://www.humboldt.edu/housing/images/controls1.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(http://www.humboldt.edu/housing/images/controls1.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(http://www.humboldt.edu/housing/images/controls1.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(http://www.humboldt.edu/housing/images/controls1.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;position: absolute;bottom: 4px;left: 0;text-align: center;width: 100%;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+#cboxOverlay{background:url(../images/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:25px; height:25px; background:url(http://www.humboldt.edu/housing/images/border1.png) no-repeat 0 0;}
+    #cboxTopCenter{height:25px; background:url(http://www.humboldt.edu/housing/images/images/border1.png) repeat-x 0 -50px;}
+    #cboxTopRight{width:25px; height:25px; background:url(http://www.humboldt.edu/housing/images/border1.png) no-repeat -25px 0;}
+    #cboxBottomLeft{width:25px; height:25px; background:url(../images/border1.png) no-repeat 0 -25px;}
+    #cboxBottomCenter{height:25px; background:url(http://www.humboldt.edu/housing/images/border1.png) repeat-x 0 -75px;}
+    #cboxBottomRight{width:25px; height:25px; background:url(../images/border1.png) no-repeat -25px -25px;}
+    #cboxMiddleLeft{width:25px; background:url(http://www.humboldt.edu/housing/images/border2.png) repeat-y 0 0;}
+    #cboxMiddleRight{width:25px; background:url(http://www.humboldt.edu/housing/images/border2.png) repeat-y -25px 0;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:20px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#444;}
+        #cboxCurrent{display: none;}
+        #cboxLoadingOverlay{background:#fff url(http://www.humboldt.edu/housing/images/loading.gif) no-repeat 5px 5px;}
+
+
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+     /* #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;} 
+        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;} */
+
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+#cboxPrevious:hover {
+background-position: -75px -25px;
+}
+#cboxPrevious {
+position: absolute;
+bottom: 0;
+left: 0;
+background: url(../images/controlz.png) no-repeat -75px 0;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+#cboxNext:hover {
+background-position: -50px -25px;
+}
+#cboxNext {
+position: absolute;
+bottom: 0;
+left: 27px;
+background: url(http://www.humboldt.edu/housing/images/controlz.png) no-repeat -50px 0;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+#cboxClose:hover {
+background-position: -25px -25px;
+}
+#cboxClose {
+position: absolute;
+bottom: 0;
+right: 0;
+background: url(http://www.humboldt.edu/housing/images/controlz.png) no-repeat -25px 0;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+
+#cboxLoadedContent {
+margin-bottom: 28px;
+}
+
+#MainContent .imagecallout h4 { text-align: center; }
+
+/* mobile VT link */
+	.mobile{
+		display:none;
+	}
+@media only screen and (max-width: 48em) {
+	.mobile{
+		display:block;
+		padding:20px 0 20px 10px;
+		margin:20px auto;
+		width:100%;
+		background:#ADC834;
+		text-align:center;
+		font-weight:bold;
+		font-size:1.8em;
+		border-radius:10px;
+		border:solid 1px #5C6F16;
+		border-width:0 2px 2px 0;
+	}
+	.mobile a{
+		color:#fff;
+		display:block;
+		padding:10px;
+		text-shadow: 0px 1px 2px #000;
+	}
+	body#diningInterior .mobile{
+		background:#0D3F64;		
+		border:solid 1px #444;
+	}
+	body#diningInterior .mobile a{
+		color:#fff;
+	}
+}

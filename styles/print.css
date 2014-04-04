@@ -1,0 +1,68 @@
+/* Print StyleSheet for Housing License Site */
+
+body { font-size: 10pt; font-family: Garamond, Georgia, "Times New Roman", Times, serif; }
+
+textarea { font-family: Garamond, Georgia, "Times New Roman", Times, serif; width: 100%; }
+
+.hidden { position: relative; top: auto; }
+
+fieldset { border: none; }
+
+.noblock { display: inline; }
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+	
+a:link:after, a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+			
+			
+p.notice, div.notice {
+	border: 1px solid #000;
+	padding: 10px 10px;
+	margin: 10px 0px;
+	}
+	div.notice.final span {
+		font-family: "Courier New", Courier, mono;
+		}
+	div.notice ul.errors {
+		padding: 0;
+		list-style: none;
+		}
+		div.notice ul.errors li {
+			padding: 5px 0px 5px 25px;
+			background-image: url(../images/decor/error_bullet.gif);
+			background-repeat: no-repeat;
+			background-position: 0 2px;
+			}
+			
+#PrintWordmark {
+	display: block;
+	}
+	#Wordmark img {
+		display: none;
+		}
+
+#HillDescription, #CanyonDescription, #CypDescription, #CVDescription, #ManorDescription {
+	display: block !important;
+	}
+	
+#Hill, #Canyon, #Cypress, #Creekview, #Manor {
+	display: block;
+	width: 140px;
+	float: left;
+	line-height: 2.5em;
+	}
+	
+#spenvAcademicIntensive, #spenvArtColony, #spenvEcoLiving, #spenvGenderNeutral, #spenvHealthAndWellness, #internationalLiving, #spenvNativeAmerican, #spenvNatResources, #spenvOacs, #spenvRed, #spenvRhythm, #spenvWomen, #spenv21 { display: block !important; }
+
+#feeSchedule, #diningOptions, #drugAct, #dates, #RegSummary, #otherItems, #meninInfo { display: block !important; }
+
+table { width: 100%; }
+table td { padding: 5px; }

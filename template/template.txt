@@ -1,0 +1,9 @@
+Dear $realname, Thank you for submitting your On-line Same Day Service Request. We will be reviewing it and contacting you if we need more information. You will also receive a status update email.
+
+Name:  $realname
+Building: $building
+Room Number: $room_num
+Work Before 10am: $Work_before_10
+Time to start before 10am: $time_to_start_before_10
+Description of problem: $desc_of_prob
+
