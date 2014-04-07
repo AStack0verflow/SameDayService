@@ -74,20 +74,20 @@
 </p>
 <p></p><p></p>
 <p>
-<!--When submitted, this is the file used to handle users input-->
+<!--When submitted, this form is what sets the parameters for the php file that used to handle users input-->
 <form method="post" enctype="multipart/form-data" action="http://www.humboldt.edu/housing/sds/formmail.php" name="WorkOrderForm" id="WorkOrderForm">
     <p>
       <!--create an tempVal env_report tjat contains The remote host, remote address Web browser and User name of the Form Submitting user-->
       <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,REMOTE_USER" />
 
-	  <!-- redirects to page if submission fails -->
+	  <!-- redirects to page if submission fails. Most errors that force this page to be loaded are because of an email not being entered in correctly-->
       <input type="hidden" name="bad_url"
- 	  	value="http://www.humboldt.edu/housing/sds/bad_redirect.html"/><!-- When a form fails for any reason, i.e. un-usable email, this html document is loaded-->
-      <!-- redirects to page if submission sucessful -->
+ 	  	value="http://www.humboldt.edu/housing/sds/bad_redirect.html"/><!-- When a form fails for any reason, i.e. un-usable email, the form is redirected to this page-->
+      <!-- redirects to page if submission sucessful i.e. all fields are entered in and a valid HSU email is used -->
       <input type="hidden" name="good_url"
       	value="http://www.humboldt.edu/housing/sds/good_redirect.html" />
-      <!--Data for the csv file -->
-      <!--name of the CSV file. The directory is in the php file-->
+      <!--Data for the csv file
+		declaration of the php file and location are here-->
       <input type="hidden" name="csvfile"
   		value="formdata.csv" />
  	  <!-- Tell the CSV what values/ columns along with the proper formats to be added. -->
@@ -97,7 +97,7 @@
 	  <input type="hidden" name="recipient" value="housing@humboldt.edu">
 	  <!--The subject of the email to be sent-->
       <input type="hidden" name="subject" value="HSU Housing Work Order Automated Response" />
-      <!--Bcc on the email to be sent-->
+      <!--Bcc on the email to be sent These addresses get notified when a submittion has occured -->
       <input type="hidden" name="bcc"
 		value="ew52_*_humboldt.edu,housing_*_humboldt.edu" />
 
@@ -105,7 +105,7 @@
       <input type="hidden" name="derive_fields" value="email=recipients,realname=first_name + last_name,order_num=%nextnum%,DateTime = %date% + %time%, ipaddr = REMOTE_ADDR, browser = HTTP_USER_AGENT, referrer = HTTP_REFERER"/>
       <input type="hidden" name="work_completed" value="false" />
 
-      <!-- this formats the body of the email you receive -->
+      <!--format the body of the email BCC declared above will receive -->
       <input type="hidden" name="mail_options"
     value="PlainTemplate=template.txt,AlwaysList,TemplateMissing=" />
     </p>
