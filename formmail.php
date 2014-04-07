@@ -253,6 +253,7 @@ else
  * setting.
  *****************************************************************************/
 /*
+This is part of the code, to help us see what data is processed in the rest of this form. -
 $recipients = $_POST['recipients'];
 $firstname = $_POST['first_name'];
 $lastname = $_POST['last_name'];
