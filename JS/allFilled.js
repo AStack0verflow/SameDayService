@@ -28,6 +28,7 @@ function allFilled()
 	var val7 = param7Field.value;
 	var val8 = param8Field.value;	
     var result;
+	//Check to make sure that all of the fields are filled and that a full student ID has been submitted
 
 	if ((!val1) || (!val2) || (!val3)|| (!val4)|| (!val5)|| (!val6)|| (!val7) || (!val8) || (val5 == " ") || (val12 > 20))
 	{
@@ -38,8 +39,7 @@ function allFilled()
 	else
 	{
 		var email = document.getElementById('recipients');
-		//email.value = email.value + '@humboldt.edu';
-		//alert("1");
+		//Tack on the @humboldt.edu for the students to maintain acceptable email addresses
 		var filepath = "http://users.humboldt.edu/ewilliams/csv/text.txt"; // Use this instead
 		if (email.value.length > 7)
 		{
@@ -58,6 +58,7 @@ function allFilled()
 		
 function changeText()
 {
+	// change the text of suggested questions to consider, based on what a general FAQ topic 
 	var mytextbox = document.getElementById('help_questions');
     var mydropdown = document.getElementById('issue');
 	mytextbox = ' ';
